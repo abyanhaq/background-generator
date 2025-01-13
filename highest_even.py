@@ -6,5 +6,5 @@ def highest_even(li):
     return(cur_highest)
 
 
-some_list = [10, 21, 3, 4, 9, 2, 22, 7, 12]
+some_list = [10, 21, 3, 4, 9, 2, 22, 7, 12, 11]
 print(highest_even(some_list))
