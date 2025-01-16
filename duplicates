@@ -1,0 +1,5 @@
+a = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+
+duplicates = [char for char in a if a.count(char) > 1]
+
+print(duplicates)

@@ -1,0 +1,41 @@
+from functools import reduce
+
+#1 Capitalize all of the pet names and print the list
+my_pets = ['sisi', 'bibi', 'titi', 'carla']
+
+def Capitalize(str):
+    return str.capitalize()
+
+print(list(map(Capitalize, my_pets)))
+
+
+
+#2 Zip the 2 lists into a list of tuples, but sort the numbers from lowest to highest.
+my_strings = ['a', 'b', 'c', 'd', 'e']
+my_numbers = [5,4,3,2,1]
+my_numbers.sort()
+print(tuple(zip(my_strings, my_numbers)))
+
+#3 Filter the scores that pass over 50%
+scores = [73, 20, 65, 19, 76, 100, 88]
+def filter_50(num):
+    if(num > 50):
+        return num
+print(list(filter(filter_50, scores)))
+
+
+#4 Combine all of the numbers that are in a list on this file using reduce (my_numbers and scores). What is the total?
+new_list = my_numbers.extend(scores)
+def combine(n1, n2):
+    return n1 + n2
+
+print(reduce(combine, my_numbers + scores))
+
+#5 Create a list that will be squared using a lambda expression
+my_list = [5,4,3]
+print(list(map(lambda x: x*x, my_list)))
+
+# 6 Sort tuple list using second expression
+a = [(0,2), (4,3), (9,9), (10, -1)]
+a.sort(key=lambda x:(x[1]))
+print(a)
