@@ -7,4 +7,5 @@ class PlayerCharacter:
 
 player1 = PlayerCharacter('User')
 
-print(player1.run())
+print(player1.name())
+player1.run()
